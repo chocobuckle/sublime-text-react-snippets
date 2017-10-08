@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import Proptypes from 'prop-types';
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  static propTypes = {
+
+  }
+
+  state = {
+
+  }
+
+  render() {
+    return (
+      ${0:<div>
+        ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
+      </div>}
+    );
+  }
+}
+
+]]>
+</content>
+    <tabTrigger>rc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React Component - Statefull</description>
+</snippet>

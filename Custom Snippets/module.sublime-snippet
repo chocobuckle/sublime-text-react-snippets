@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+const = '';
+
+export function () {
+  return {
+    type: ,
+  }
+}
+
+const initialState = {
+
+}
+
+export default function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} (state = initialState, action) {
+  switch (action.type) {
+    case :
+      return {
+        ...state,
+
+      };
+    default:
+      return state
+  }
+}
+
+]]></content>
+    <tabTrigger>module</tabTrigger>
+    <scope>source.js</scope>
+    <description>Redux Module skeleton</description>
+</snippet>

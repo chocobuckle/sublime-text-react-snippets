@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+import { connect } from 'react-redux';
+
+function mapStateToProps({  }, {  }) {
+  return {
+
+  };
+}
+
+export default connect(mapStateToProps)(${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}});
+
+]]></content>
+    <tabTrigger>mstp</tabTrigger>
+    <scope>source.js</scope>
+    <description>Redux Connect Skeleton</description>
+</snippet>

@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
+import Proptypes from 'prop-types';
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+  static propTypes = {
+
+  }
+
+  state = {
+
+  }
+
+  render() {
+    return (
+      ${0:<View>
+        <Text>
+          ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
+        </Text>
+      </View>}
+    );
+  }
+}
+
+]]></content>
+    <tabTrigger>rnc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React Native Statefull Component Skeleton</description>
+</snippet>
