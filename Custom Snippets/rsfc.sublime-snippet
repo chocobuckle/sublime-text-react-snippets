@@ -1,13 +1,13 @@
 <snippet>
   <content><![CDATA[
 import React from 'react';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.propTypes = {
 
 };
 
-export default function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}({ }) {
+export default function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}(props) {
   return (
     ${0:<div>
       ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
