@@ -2,9 +2,9 @@
     <content><![CDATA[
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import PropTypes from 'prop-types';
+import { } from 'prop-types';
 
-export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
+class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Component {
   static propTypes = {
 
   }
@@ -24,8 +24,10 @@ export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends Compone
   }
 }
 
+export default ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}};
+
 ]]></content>
-    <tabTrigger>rnc</tabTrigger>
+    <tabTrigger>ncom</tabTrigger>
     <scope>source.js</scope>
     <description>React Native Statefull Component Skeleton</description>
 </snippet>

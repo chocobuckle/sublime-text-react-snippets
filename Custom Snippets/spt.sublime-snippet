@@ -4,5 +4,5 @@ static propTypes = {}
 ]]></content>
     <tabTrigger>spt</tabTrigger>
     <scope>source.js</scope>
-    <description>React: propTypes { ... }</description>
+    <description>Static Proptypes</description>
 </snippet>

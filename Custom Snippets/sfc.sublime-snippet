@@ -1,19 +1,21 @@
 <snippet>
   <content><![CDATA[
 import React from 'react';
-import PropTypes from 'prop-types';
+import { } from 'prop-types';
 
 ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}.propTypes = {
 
 };
 
-export default function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}(props) {
+function ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}({ }) {
   return (
     ${0:<div>
       ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
     </div>}
   );
 }
+
+export default ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}};
 
 ]]></content>
     <tabTrigger>rsfc</tabTrigger>
