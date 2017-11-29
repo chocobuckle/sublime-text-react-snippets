@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import styled from 'styled-components';
+]]></content>
+    <tabTrigger>isty</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import Styled Components</description>
+</snippet>
