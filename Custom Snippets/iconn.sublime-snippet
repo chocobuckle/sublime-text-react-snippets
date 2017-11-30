@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+import { connect } from 'react-redux';
+${0}
+]]></content>
+    <tabTrigger>iconn</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import Connect</description>
+</snippet>

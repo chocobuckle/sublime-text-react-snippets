@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-static propTypes = {}
-]]></content>
-    <tabTrigger>spt</tabTrigger>
-    <scope>source.js</scope>
-    <description>Static Proptypes</description>
-</snippet>

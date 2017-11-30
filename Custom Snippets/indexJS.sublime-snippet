@@ -1,0 +1,41 @@
+<snippet>
+    <content><![CDATA[
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import { routerReducer } from 'react-router-redux';
+import thunk from 'redux-thunk';
+import * as reducers from 'ducks';
+import registerServiceWorker from './registerServiceWorker';
+${0}
+
+const store = createStore(combineReducers({...reducers, routing: routerReducer}), compose(
+  applyMiddleware(thunk),
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+));
+
+const rootEl = document.getElementById('app');
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootEl
+);
+
+if (module.hot) {
+  module.hot.accept('./App', () => {
+    const NextApp = require('./App').default; // eslint-disable-line global-require
+    ReactDOM.render(<NextApp />, rootEl);
+  });
+}
+
+registerServiceWorker();
+]]></content>
+    <tabTrigger>indexJS Setup</tabTrigger>
+    <scope>source.js</scope>
+    <description>index.js Setup</description>
+</snippet>

@@ -1,0 +1,50 @@
+<snippet>
+    <content><![CDATA[
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import styled, { injectGlobal } from 'styled-components';
+import createHistory from 'history/createBrowserHistory';
+${0}
+
+export const history = createHistory();
+
+// eslint-disable-next-line no-unused-expressions
+injectGlobal`
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+`;
+
+function App() {
+  return (
+    <BrowserRouter history={history}>
+      <Wrapper>
+        <Route component={${1}} />
+        <Switch>
+          <Route exact path='/' component={${2}} />
+          <Route render={() => <p>Page Not Found!</p>} />
+        </Switch>
+      </Wrapper>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+]]></content>
+    <tabTrigger>appSetup</tabTrigger>
+    <scope>source.js</scope>
+    <description>App Setup</description>
+</snippet>

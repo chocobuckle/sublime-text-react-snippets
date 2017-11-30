@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+${0}const ${1} = '${1}';
+
+export const ${2} = (${3}) => ({
+  type: ${1}${4}
+});
+
+const initialState = {${5}};
+
+export default function ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}(state = initialState, action) {
+  switch (action.type) {
+    case ${1}:
+      return {
+        ...state,
+        ${6}
+      };
+    default:
+      return state;
+  }
+}
+]]></content>
+    <tabTrigger>duck</tabTrigger>
+    <scope>source.js</scope>
+    <description>Redux Duck Skeleton</description>
+</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-static state = {}
-]]></content>
-    <tabTrigger>ss</tabTrigger>
-    <scope>source.js</scope>
-    <description>Static State</description>
-</snippet>

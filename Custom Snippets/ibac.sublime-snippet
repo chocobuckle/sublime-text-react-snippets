@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+import { bindActionCreators } from 'redux';
+${0}
+]]></content>
+    <tabTrigger>ibac</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import Bind Action Creators</description>
+</snippet>

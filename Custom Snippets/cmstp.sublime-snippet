@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+export default connect(mapStateToProps)(${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g});
+]]></content>
+    <tabTrigger>cmstp</tabTrigger>
+    <scope>source.js</scope>
+    <description>Connect mapStateToProps</description>
+</snippet>

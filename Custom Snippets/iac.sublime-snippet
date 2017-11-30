@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+import * as ${1}ActionCreators from 'ducks/${1}';
+${0}
+]]></content>
+    <tabTrigger>iac</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import Action Creators</description>
+</snippet>

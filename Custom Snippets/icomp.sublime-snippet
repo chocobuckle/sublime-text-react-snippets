@@ -1,8 +1,9 @@
 <snippet>
     <content><![CDATA[
-import {  } from '~/components';
+import { ${1} } from 'components';
+${0}
 ]]></content>
-    <tabTrigger>icom</tabTrigger>
+    <tabTrigger>icomp</tabTrigger>
     <scope>source.js</scope>
     <description>Import Component</description>
 </snippet>
