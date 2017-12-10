@@ -12,10 +12,13 @@ import * as reducers from 'ducks';
 import registerServiceWorker from './registerServiceWorker';
 ${0}
 
-const store = createStore(combineReducers({...reducers, routing: routerReducer}), compose(
-  applyMiddleware(thunk),
-  window.devToolsExtension ? window.devToolsExtension() : f => f
-));
+// eslint-disable-next-line no-underscore-dangle
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(
+  combineReducers({...reducers, routing: routerReducer}),
+  composeEnhancers(applyMiddleware(thunk))
+);
 
 const rootEl = document.getElementById('app');
 
