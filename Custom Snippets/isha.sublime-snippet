@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { ${1} } from 'shared-styles';${0}
+]]></content>
+    <tabTrigger>isha</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import Shared Styles</description>
+</snippet>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-export default connect(null, mapDispatchToProps)(${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g});
+export default connect(mapStateToProps, mapDispatchToProps)(${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g});
 ]]></content>
     <tabTrigger>cmsmdtp</tabTrigger>
     <scope>source.js</scope>

@@ -4,33 +4,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import { routerReducer } from 'react-router-redux';
 import thunk from 'redux-thunk';
 import * as reducers from 'ducks';
-import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import './index.css';
+import App from './App';${0}
 
 // eslint-disable-next-line no-underscore-dangle
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const configureStore = () => {
-  const storeWithHMREnabled = createStore(
-    combineReducers({...reducers}),
-    composeEnhancers(applyMiddleware(thunk))
-  );
-
-  if (process.env.NODE_ENV !== 'production') {
-    if (module.hot) {
-      module.hot.accept('./ducks', () => {
-        storeWithHMREnabled.replaceReducer(combineReducers({...reducers}));
-      });
-    }
-  }
-
-  return storeWithHMREnabled;
-};
-
-const store = configureStore();
+const store = createStore(
+  combineReducers({...reducers, routing: routerReducer}),
+  composeEnhancers(applyMiddleware(thunk))
+);
 
 const rootEl = document.getElementById('root');
 
@@ -43,16 +30,13 @@ ReactDOM.render(
 
 if (module.hot) {
   module.hot.accept('./App', () => {
-    ReactDOM.render(
-      <Provider store={store}>
-        <App />
-      </Provider>,
-      rootEl
-    );
+    const NextApp = require('./App').default; // eslint-disable-line global-require
+    ReactDOM.render(<NextApp />, rootEl);
   });
 }
 
 registerServiceWorker();
+
 ]]></content>
     <tabTrigger>indexJS Setup</tabTrigger>
     <scope>source.js</scope>

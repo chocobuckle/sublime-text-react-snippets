@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import { ${1} } from 'prop-types';
+import { View, Text${6} } from 'react-native';${0}
+
+class ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g} extends Component {
+  static propTypes = {
+    ${2}
+  };
+  ${5:
+  state = {
+    ${4}
+  \};
+  }
+  render() {
+    return ${8:(
+      <View>
+        ${7:<Text>
+          ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}
+        </Text>}
+      </View>
+    )};
+  }
+}
+
+export default ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g};
+
+]]></content>
+    <tabTrigger>ncom</tabTrigger>
+    <scope>source.js</scope>
+    <description>React Native Statefull Component Skeleton</description>
+</snippet>

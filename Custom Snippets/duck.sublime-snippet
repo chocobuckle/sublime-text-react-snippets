@@ -1,12 +1,12 @@
 <snippet>
     <content><![CDATA[
-${0}const ${1} = '${1}';
+const ${1} = '${1}';${0}
 
-export const ${2} = (${3}) => ({
-  type: ${1}${4}
+const initialState = {${2}};
+
+export const ${3} = (${4}) => ({
+  type: ${1}${5}
 });
-
-const initialState = {${5}};
 
 export default function ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}(state = initialState, action) {
   switch (action.type) {
@@ -19,6 +19,7 @@ export default function ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}(state = initialSt
       return state;
   }
 }
+
 ]]></content>
     <tabTrigger>duck</tabTrigger>
     <scope>source.js</scope>

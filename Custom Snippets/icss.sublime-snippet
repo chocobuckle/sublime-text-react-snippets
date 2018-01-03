@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { css } from 'styled-components';${0}
+]]></content>
+    <tabTrigger>icss</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import CSS From Styled Components</description>
+</snippet>

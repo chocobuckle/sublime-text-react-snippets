@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+static state = {
+  ${0}
+}
+]]></content>
+    <tabTrigger>ss</tabTrigger>
+    <scope>source.js</scope>
+    <description>Static State</description>
+</snippet>

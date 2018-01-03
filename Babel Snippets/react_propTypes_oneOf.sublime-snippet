@@ -2,7 +2,7 @@
     <content><![CDATA[
 oneOf([${1:value}, ${2:value}])${3:.isRequired}${4:,}$0
 ]]></content>
-    <tabTrigger>ptone</tabTrigger>
+    <tabTrigger>ptoneof</tabTrigger>
     <scope>source.js</scope>
     <description>React: PropTypes.oneOf (Enum)</description>
 </snippet>

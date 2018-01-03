@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+export const ${1} = css`
+  ${2}
+`;${0}
+]]></content>
+    <tabTrigger>exsty</tabTrigger>
+    <scope>source.js</scope>
+    <description>Export Shared Style</description>
+</snippet>

@@ -1,8 +1,10 @@
 <snippet>
     <content><![CDATA[
-oneOfType([${1}, ${2}])${3:.isRequired}${4:,}$0
+oneOfType([
+  ${1}
+])${3:.isRequired}${4:,}$0
 ]]></content>
-    <tabTrigger>ptonet</tabTrigger>
+    <tabTrigger>ptoneoft</tabTrigger>
     <scope>source.js</scope>
     <description>React: PropTypes.oneOfType (Union)</description>
 </snippet>

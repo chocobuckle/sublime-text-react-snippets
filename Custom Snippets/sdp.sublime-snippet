@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+static defaultProps = {
+  ${0}
+};
+]]></content>
+    <tabTrigger>sdp</tabTrigger>
+    <scope>source.js</scope>
+    <description>Static Default Props</description>
+</snippet>

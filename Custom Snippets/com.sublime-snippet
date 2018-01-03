@@ -1,28 +1,28 @@
 <snippet>
     <content><![CDATA[
 import React, { Component } from 'react';
-import { ${2} } from 'prop-types';
-${0}
+import { ${2} } from 'prop-types';${0}
 
 class ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g} extends Component {
   static propTypes = {
     ${3}
   };
-
+  ${5:
   state = {
     ${4}
-  };
-
+  \};
+  }
   render() {
     return ${1:(
-      ${6:<div>
-        ${5:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
+      ${7:<div>
+        ${6:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}}
       </div>}
     )};
   }
 }
 
 export default ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g};
+
 ]]>
 </content>
     <tabTrigger>com</tabTrigger>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';${0}
+]]></content>
+    <tabTrigger>irc</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import React and Component</description>
+</snippet>

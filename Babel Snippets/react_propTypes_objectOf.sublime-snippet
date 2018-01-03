@@ -2,7 +2,7 @@
     <content><![CDATA[
 objectOf(${1})${2:.isRequired}${3:,}$0
 ]]></content>
-    <tabTrigger>ptoOf</tabTrigger>
+    <tabTrigger>ptoof</tabTrigger>
     <scope>source.js</scope>
     <description>React: PropTypes.objectOf</description>
 </snippet>

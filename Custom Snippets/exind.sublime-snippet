@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+export { default as ${1} } from './${1}'${0};
+]]></content>
+    <tabTrigger>exind</tabTrigger>
+    <scope>source.js</scope>
+    <description>Export From Index.JS</description>
+</snippet>
