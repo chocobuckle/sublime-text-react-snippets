@@ -1,0 +1,55 @@
+<snippet>
+    <content><![CDATA[
+const ${2} = '${2}';
+const ${2}_ERROR = '${2}_ERROR';
+const ${2}_SUCCESS = '${2}_SUCCESS';${0}
+
+const initialState = {
+  ${1}
+  isFetching: false,
+  error: ''
+};
+
+const ${3} = () => ({
+  type: ${2}
+});
+
+const ${3}Error = (error) => ({
+  type: ${2}_ERROR,
+  error
+});
+
+const ${3}Success = (${4}) => ({
+  type: ${2}_SUCCESS,
+  ${4}
+});
+
+export default function ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}(state = initialState, action) {
+  switch (action.type) {
+    case ${2}:
+      return {
+        ...state,
+        isFetching: true
+      };
+    case ${2}_ERROR:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.error
+      };
+    case ${2}_SUCCESS:
+      return {
+        ...state,
+        isFetching: false,
+        ${5}
+      };
+    default:
+      return state;
+  }
+}
+
+]]></content>
+    <tabTrigger>dk3</tabTrigger>
+    <scope>source.js</scope>
+    <description>Redux Duck x 3 Skeleton</description>
+</snippet>
