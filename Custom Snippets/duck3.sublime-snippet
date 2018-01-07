@@ -21,6 +21,7 @@ const ${3}Error = (error) => ({
 
 const ${3}Success = (${4}) => ({
   type: ${2}_SUCCESS,
+  timestamp: Date.now(),
   ${4}
 });
 
@@ -40,7 +41,9 @@ export default function ${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}(state = initialSt
     case ${2}_SUCCESS:
       return {
         ...state,
+        lastUpdated: action.timestamp || state.lastUpdated,
         isFetching: false,
+        error: '',
         ${5}
       };
     default:
