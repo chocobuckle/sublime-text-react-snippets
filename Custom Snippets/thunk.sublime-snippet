@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+export function ${1}() {
+  return function (dispatch${2:, getState}) {
+    ${0}
+  };
+}
+]]></content>
+    <tabTrigger>thunk</tabTrigger>
+    <scope>source.js</scope>
+    <description>Thunk</description>
+</snippet>
