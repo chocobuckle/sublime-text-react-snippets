@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-this.setState(${0:(prevState${1:, props}) => ({
+this.setState(${0:(prevState${1:, props}) => {
   ${2}
-\})});
+\}});
 ]]></content>
     <tabTrigger>sst</tabTrigger>
     <scope>source.js</scope>
