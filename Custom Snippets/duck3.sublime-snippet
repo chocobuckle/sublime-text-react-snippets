@@ -1,5 +1,6 @@
 <snippet>
     <content><![CDATA[
+/* eslint-disable no-shadow */
 const ${2} = '${2}';
 const ${2}_ERROR = '${2}_ERROR';
 const ${2}_SUCCESS = '${2}_SUCCESS';${0}

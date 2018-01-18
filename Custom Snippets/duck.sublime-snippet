@@ -1,5 +1,6 @@
 <snippet>
     <content><![CDATA[
+/* eslint-disable no-shadow */
 const ${2} = '${2}';${0}
 
 const initialState = {
