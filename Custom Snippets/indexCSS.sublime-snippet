@@ -10,9 +10,13 @@ html {
   box-sizing: inherit;
 }
 
+html,
 body {
+  color: #5F5F5F;
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   font-family: sans-serif;
 }
 ]]></content>
