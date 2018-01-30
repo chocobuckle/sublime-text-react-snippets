@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { ${1} } from 'helpers/utils';${0}
+]]></content>
+    <tabTrigger>iutil</tabTrigger>
+    <scope>source.js</scope>
+    <description>Import Utility Function</description>
+</snippet>
